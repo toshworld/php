@@ -1,12 +1,17 @@
 <?php
-echo 'hello';
 
+$dogs = array(
+                "可愛い" => "柴犬",
+                "いかつい" => "ブルドック",
+                "キモイ" => "チワワ",
+                "かっこいい" => "ドーベルマン"
+            );
 
-$e ='a';
-
-if ($e == 'a') {
-    echo 'OK';
-} else {
-    echo 'NG';
+foreach($dogs as $key => $value){
+    if($key=="可愛い"){
+        echo "めちゃくちゃ".$key."ぜ".$value;
+    }
 }
+
+
 ?>
